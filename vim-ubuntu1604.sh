@@ -31,5 +31,3 @@ make distclean
             --enable-multibyte
 
 make && make install
-
-
