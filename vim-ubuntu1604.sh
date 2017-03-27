@@ -1,8 +1,9 @@
 #!/bin/bash
 
-apt-get remove --purge vim vim-runtime vim-gnome vim-tiny vim-common vim-gui-common
-apt-get build-dep vim-gnome
-apt-get install build-essential liblua5.3-0 liblua5.3-dev python-dev ruby-dev \
+apt remove --purge vim vim-runtime vim-gnome vim-tiny vim-common vim-gui-common
+apt update
+apt build-dep vim-gnome
+apt install -y build-essential liblua5.3-0 liblua5.3-dev python-dev ruby-dev \
   libperl-dev libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev \
   libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev
 rm -rf /usr/local/share/vim /usr/bin/vim /usr/local/bin/vim
